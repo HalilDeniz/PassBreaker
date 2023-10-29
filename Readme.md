@@ -18,13 +18,13 @@ PassBreaker is a command-line password cracking tool developed in Python. It all
 
 1. Clone the repository:
 
-   ```bash
+   ```shell
    git clone https://github.com/HalilDeniz/PassBreaker.git
    ```
 
 2. Install the required dependencies:
 
-   ```bash
+   ```shell
    pip install -r requirements.txt
    ```
 
@@ -52,31 +52,31 @@ Elbette! İşte İngilizce olarak yazılmış başlık ve küçük bir bilgi ile
 ## Usage Examples
 
 ### Wordlist-based Password Cracking
-```bash
+```shell
 python passbreaker.py 5f4dcc3b5aa765d61d8327deb882cf99 passwords.txt --algorithm md5
 ```
 This command attempts to crack the password with the hash value "5f4dcc3b5aa765d61d8327deb882cf99" using the MD5 algorithm and a wordlist from the "passwords.txt" file.
 
 ### Brute Force Attack
-```bash
+```shell
 python passbreaker.py 5f4dcc3b5aa765d61d8327deb882cf99 --brute-force --min-length 6 --max-length 8 --character-set abc123
 ```
 This command performs a brute force attack to crack the password with the hash value "5f4dcc3b5aa765d61d8327deb882cf99" by trying all possible combinations of passwords with a length between 6 and 8 characters, using the character set "abc123".
 
 ### Password Complexity Evaluation
-```bash
+```shell
 python passbreaker.py 5f4dcc3b5aa765d61d8327deb882cf99 passwords.txt --algorithm sha256 --complexity
 ```
 This command evaluates the complexity of passwords in the "passwords.txt" file and attempts to crack the password with the hash value "5f4dcc3b5aa765d61d8327deb882cf99" using the SHA-256 algorithm. It only tries passwords that meet the complexity requirements.
 
 ### Using Salt Value
-```bash
+```shell
 python passbreaker.py 5f4dcc3b5aa765d61d8327deb882cf99 passwords.txt --algorithm md5 --salt mysalt123
 ```
 This command uses a specific salt value ("mysalt123") for the password cracking process. Salt is used to enhance the security of passwords.
 
 ### Parallel Processing
-```bash
+```shell
 python passbreaker.py 5f4dcc3b5aa765d61d8327deb882cf99 passwords.txt --algorithm sha512 --parallel
 ```
 This command performs password cracking with parallel processing for faster cracking. It utilizes multiple processing cores, but it may consume more system resources.
