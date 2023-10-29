@@ -2,7 +2,7 @@
 # PassBreaker
 
 PassBreaker is a command-line password cracking tool developed in Python. It allows you to perform various password cracking techniques such as wordlist-based attacks and brute force attacks.
-<img src="source/passbreaker">
+<img src="source/passbreaker.png">
 
 ## Features
 
